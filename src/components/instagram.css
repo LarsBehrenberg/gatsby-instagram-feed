@@ -1,0 +1,50 @@
+.post-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post-item {
+  position: relative;
+  height: 100%;
+  flex: 1 0 12rem;
+  margin: 0 1rem 2rem;
+  color: #fff;
+}
+
+.post-image {
+  border-radius: 0.4rem;
+  width: 100%;
+  display: block;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.post-item-likes {
+  margin-right: 1.5rem;
+}
+
+.post-item:hover .post-item-info,
+.post-item:focus .post-item-info {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.post-item-info {
+  display: none;
+  border-radius: 0.4rem;
+}
+
+.post-item-info ul {
+  padding: 0;
+  margin: 0;
+}
+
+.post-item-info li {
+  display: inline;
+}
